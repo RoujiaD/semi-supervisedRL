@@ -10,6 +10,14 @@ The libriary requires:<br>
   * random <br>
   * argparse <br>
   
+# Contents and Usage
+`Agent_a.py`: This script trains a DQN which asks for reward when it's uncertain about its predictions, and in the end it will save the trained DQN (so you need to create a directory before running the script) and output the predicted scores and actual scores. <br>
+`Agent_f.py`: This scipt trains a DQN which gets reward at every step, and in the end it will save the trained DQN (so you need to create a directory before running the script) and output score history. <br>
+`Agent_e.py`: This script trains a DQN which gets reward in the beginning, and in the end it will save the trained DQN (so you need to create a directory before running the script) and output the predicted scores and actual score. <br>
+`Agent_r.py`: This script trains a DQN which randomly receives reward at each step, and in the end it will save the trained DQN (so you need to create a directory before running the script) and output the predicted scores and actual score. <br>
+`RNN.py`: This script stores functions related to the RNN <br>
+`test agents`: This is used to test the performance of all agents by loading the trained DQNs and test the mean score they obtain in 50 trials.
+  
 # CartPole
 >Cartpole is a classic control game from OpenAI Gym, and the goal of the game is to prevent the pendulum from both falling over and >moving away from center. The action player can take is to push the cart to either left or right with a fixed force, and the state the >cartpole has is the position and acceleration of both cart and pole. The game is considered terminal once the pole is more than 12 >degrees from vertical, or once the cart moves more than 2.4 units from the center. [Source](https://gym.openai.com/envs/CartPole-v1/)
 
@@ -65,12 +73,5 @@ example of score history
 test scores vs. ratio
 ![](https://github.com/RoujiaD/semi-supervisedRL/blob/master/scores/test_score.png)
 
-Contents and Usage
-=======================
-`Agent_a.py`: This script trains a DQN which asks for reward when it's uncertain about its predictions, and in the end it will save the trained DQN (so you need to create a directory before running the script) and output the predicted scores and actual scores. <br>
-`Agent_f.py`: This scipt trains a DQN which gets reward at every step, and in the end it will save the trained DQN (so you need to create a directory before running the script) and output score history. <br>
-`Agent_e.py`: This script trains a DQN which gets reward in the beginning, and in the end it will save the trained DQN (so you need to create a directory before running the script) and output the predicted scores and actual score. <br>
-`Agent_r.py`: This script trains a DQN which randomly receives reward at each step, and in the end it will save the trained DQN (so you need to create a directory before running the script) and output the predicted scores and actual score. <br>
-`RNN.py`: This script stores functions related to the RNN <br>
-`test agents`: This is used to test the performance of all agents by loading the trained DQNs and test the mean score they obtain in 50 trials.
+
 
