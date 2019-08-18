@@ -1,5 +1,5 @@
 # Active, Semi-supervised Reinforcement Learning
-Blog
+[Blog](https://medium.com/@roujiadong/active-reinforcement-learning-da5196ae7cbd)
 # Setup
 The libriary requires:<br>
   * gym <br>
